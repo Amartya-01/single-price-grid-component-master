@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+}
+
+.container{
+    max-width: 600px;
+    margin:1em;
+}
+
+.card{
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.25);
+    border-radius: 6px;
+}
+
+.top{
+    border-radius: 6px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: 2em ;
+}
+
+.top h3{
+    color: hsl(179, 62%, 43%);
+    margin-bottom: 1em;
+}
+
+.top h4{
+    color:  hsl(71, 74%, 60%);
+    margin-bottom: 0.9em;
+}
+
+.top p{
+    color: hsl(218, 22%, 67%);
+}
+.bottom{
+    display: flex;
+}
+
+.left{
+    background-color: hsl(179, 62%, 43%);
+    width: 50%;
+    padding: 1.8em;
+    color: white;
+    border-bottom-left-radius: 6px;
+}
+
+.left h4{
+    margin-bottom: 1em;
+    font-size: 16px;
+}
+
+.price_details{
+    display: flex;
+    margin-bottom: 1em;
+    align-items: center;
+}
+
+.price{
+    font-size: 1.8em;
+}
+
+.time{
+    margin-left: 0.8em;
+    font-size: 0.9em;
+    color: hsl(199, 36%, 91%);
+    opacity: 80%;
+}
+
+.left p{
+    color: hsl(199, 39%, 90%);
+    opacity: 90%;
+}
+
+button{
+    margin-top: 2em;
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+    padding: 1em 2em;
+    border: none;
+    border-radius: 5px;
+    background-color: hsl(71, 73%, 54%);
+    color: white;
+}
+.right{
+    padding: 1.8em;
+    color: white;
+    width: 50%;
+    background-color: hsl(179, 51%, 50%);
+    border-bottom-right-radius: 6px;
+}
+
+.right h4{
+    margin-bottom: 1em;
+}
+
+li{
+    margin-bottom: 0.4em ;
+    color: white;
+    opacity: 70%;
+    list-style: none;
+}
+
+@media screen and (max-width:500px) {
+
+    .card{
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .top{
+        width: 100%;
+    }
+    .bottom{
+        width: 100%;
+        flex-direction: column;
+    }
+    .left{
+        width: 100%;
+        border-bottom-left-radius: 0;
+    }
+
+    .right{
+        width: 100%;
+        border-bottom-left-radius: 6px;
+    }
+}
